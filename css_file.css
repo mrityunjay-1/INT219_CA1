@@ -57,6 +57,10 @@
 	a: visited{
 		color: blue;
 	}
+	
+	.form1{
+		width: 80%;
+	}
 
 	/* responsive design for Mobile devices */
 	@media(max-width: 768px){
@@ -76,6 +80,9 @@
 		}
 		.main_nav_child3_child1 > div{
 			background-color: lightgreen;
+		}
+		.form1{
+			width: 100%;
 		}
 	}
 	
