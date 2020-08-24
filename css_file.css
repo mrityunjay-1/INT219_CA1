@@ -1,0 +1,101 @@
+
+	html{
+		font-size: 135%;
+	}
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	body{
+		font-family: 'helvetica';
+	}
+	
+	.main_nav{
+		display: table;
+		width: 100%;
+		background-color: green;
+		color: white;
+	}
+	.main_nav > div{
+		display: table-cell;
+		text-align: center;
+		padding: 0.5rem 1rem;
+		line-height: 1rem;
+		
+	}
+	.main_nav_child3{
+		position: relative;
+		line-height: 1rem;
+	}
+	.main_nav_child3_child1{
+		width: 100%;
+		padding: 0.2rem 0;
+		display: none;
+		font-size: 0.9rem;
+		position: absolute;
+	}
+	.main_nav_child3_child1 > div{
+		text-align: center;
+		background-color: green;
+		padding: 0.3rem 1rem;
+	}
+	.main_nav_child3_child1 > div:hover{
+		background-color: red;
+	}
+	
+	.main_nav_child3:hover  .main_nav_child3_child1{
+		display: block;
+	}	
+	a{
+		text-decoration: none;
+		color: white;
+	}
+	a:active{
+		color: yellow;
+	}
+	a: visited{
+		color: blue;
+	}
+
+	/* responsive design for Mobile devices */
+	@media(max-width: 768px){
+		html{
+			font-size: 100%;
+		}
+        .main_div{
+            width: 100%;
+            display: block;
+        }
+		.main_nav > div{
+            width: 100%;
+			display: block;
+		}
+		.main_nav_child3_child1{
+			left: 0;
+		}
+		.main_nav_child3_child1 > div{
+			background-color: lightgreen;
+		}
+	}
+	
+	.table1{
+		font-size: 0.9rem;
+		border-collapse: collapse;
+	}
+	td{
+		padding: 0.18rem 0.9rem;
+	}
+	input{
+		width: 100%;
+        font-size: 0.9rem;
+	}
+    select {
+        width: 100%;
+    }
+	.form1_child1 > div{
+        padding: 0.2rem 0;    
+    }
+    h3{
+        color: red;
+    }
