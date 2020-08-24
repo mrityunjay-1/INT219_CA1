@@ -12,13 +12,14 @@
 <div class="main_nav">
 	<div class="main_nav_child1"> <a href="#engineering" > Home </a></div>
 	<div class="main_nav_child2"> <a href="#engineering" > About </a> </div>
-	<div class="main_nav_child3"> <span> Products </span>
-		<div class="main_nav_child3_child1">
-			<div> <a href="#engineering" > Engineering </a> </div>
+	<div class="main_nav_child3"> <span style="color: white;"> Products </span>
+		<div class="main_nav_child3_child1" style="border-radius: 5px;">
+            <center><div style="width: 0rem; height: 0rem; left: 0; right: 0; top: 0; bottom: 0; border-left: 9px solid transparent; border-right: 9px solid transparent; border-bottom: 10px solid green;"> </div></center>
+			<div style="border-radius: 0.5rem 0.1rem 0 0 ;"> <a href="#engineering" > Engineering </a> </div>
 			<div> <a href="#engineering" > Telecom  </a> </div>
 			<div> <a href="#engineering" > Energy  </a> </div>
 			<div> <a href="#engineering" > Finanace  </a> </div>
-			<div> <a href="#engineering" > Consultancy  </a> </div>
+			<div style="border-radius: 0 0 0.5rem 0.1rem;"> <a href="#engineering" > Consultancy  </a> </div>
 		</div>
 	</div>
 	<div class="main_nav_child4"> <a href="#engineering" > Services  </a> </div>
@@ -77,7 +78,7 @@
 
 <!--    QUESTION 1    (FORM) -->
 
-<form>
+<form action="target.php" method="POST" enctype="multipart/form-data">
 <div style="display: grid; place-items: center;">
 <div class="form1" style=" padding: 1rem;display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 0.9rem; background-color: #99ff66;">
 
@@ -85,15 +86,15 @@
 		<h3 style="text-align: center; "> Personal Details </h3><br />
 		<div style="display: flex; justify-content: center;">
 			<div style="width: 30%;"> Name </div>	
-			<div style="width: 50%;"> <input type="text" /> </div>
+			<div style="width: 50%;"> <input type="text" name="name1"/> </div>
 		</div>
 		<div style="display: flex; justify-content: center;">
 			<div style="width: 30%;"> Password </div>	
-			<div style="width: 50%;"> <input type="password" /> </div>
+			<div style="width: 50%;"> <input type="password" name="password1" /> </div>
 		</div>
 		<div style="display: flex; justify-content: center;">
 			<div style="width: 30%;"> Eamil id </div>	
-			<div style="width: 50%;"> <input type="email" /> </div>
+			<div style="width: 50%;"> <input type="email" name="email1" /> </div>
 		</div>
 		<div style="display: flex; justify-content: center;">
 			<div style="width: 30%;"> Gender </div>	
@@ -101,7 +102,7 @@
 		</div>
 		<div style="display: flex; justify-content: center;">
 			<div style="width: 30%;"> Contact </div>	
-			<div style="width: 50%;"> <input type="number" /> </div>
+			<div style="width: 50%;"> <input type="number" name="number1"/> </div>
 		</div>
 	</div>
 	<br />
