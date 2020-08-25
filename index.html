@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Question 1 Form </title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css_file.css" rel="stylesheet" type="text/css" />
+<style>
+    .pages{
+        display: inline-block;
+        color: red;
+    }
+</style>
+</head>
+<body>
+
+
+<div>
+    <h1 style="text-align: center;">question1.com</h1>
+    
+    <a class="pages" href="Question2.html" > Question 2 </a>
+    <a class="pages" href="Question3.html" > Question 3 </a>
+</div>
+<br />
+
+
+
+<form action="target.php" method="POST" enctype="multipart/form-data">
+<div style="display: grid; place-items: center;">
+<div class="form1" style=" padding: 1rem;display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 0.9rem; background-color: #99ff66;">
+
+	<div style="width: 80%;" class="form1_child1">
+		<h3 style="text-align: center; "> Personal Details </h3><br />
+		<div style="display: flex; justify-content: center;">
+			<div style="width: 30%;"> Name </div>	
+			<div style="width: 50%;"> <input type="text" name="name1"/> </div>
+		</div>
+		<div style="display: flex; justify-content: center;">
+			<div style="width: 30%;"> Password </div>	
+			<div style="width: 50%;"> <input type="password" name="password1" /> </div>
+		</div>
+		<div style="display: flex; justify-content: center;">
+			<div style="width: 30%;"> Eamil id </div>	
+			<div style="width: 50%;"> <input type="email" name="email1" /> </div>
+		</div>
+		<div style="display: flex; justify-content: center;">
+			<div style="width: 30%;"> Gender </div>	
+			<div style="width: 50%;"> <input type="radio" value="male" style="width: 10%;" name="gender" /> Male <input type="radio" style="width: 10%;" name="gender" value="female" /> Female  </div>
+		</div>
+		<div style="display: flex; justify-content: center;">
+			<div style="width: 30%;"> Contact </div>	
+			<div style="width: 50%;"> <input type="number" name="number1"/> </div>
+		</div>
+	</div>
+	<br />
+
+	<div style="width: 80%;">
+		<h3 style="text-align: center; "> Educational Qualifications </h3><br />
+		<div style="display: flex; justify-content: center;">
+			<div style="width: 30%;"> Degrees </div>	
+			<div style="width: 50%;"> 
+				<select id="degrees"> 
+					<option value="select degree" selected> select Group </option> 
+					<option value="Engineering"> Engineering </option>
+				</select> 
+			</div>
+		</div>
+		<div style="display: flex; justify-content: center;">
+			<div style="width: 30%;"> Engineering </div>
+			<div style="width: 50%;"> 
+				<select id="degrees"> 
+					<option value="select degree" selected> select Group </option> 
+					<option value="Computer Science"> Computer Science </option>
+				</select> 
+			</div>
+		</div>
+        <div style="display: flex; justify-content: center;">
+			<div style="width: 30%;"> Hobbies </div>
+			<div style="width: 50%;"> 
+				<input type="checkbox" style="width: 10%;" name="chess" value="chess"/>  Playing chess
+                <input type="checkbox" style="width: 10%;" name="books" value="books" /> Reading Books
+		</div>
+		</div>
+	</div>
+    <br />
+	
+	<div style="width: 80%;">
+		<h3 style="text-align: center; "> Address </h3> <br />
+		<div style="display: flex; justify-content: center;">
+			<div style="width: 80%;" align="center"> <textarea style=" width: 60%; height: 3.5rem;">  </textarea> </div>
+		</div>
+		<div style="display: flex; justify-content: center;">
+			<div style="width: 30%;"> Revenue </div>	
+			<div style="width: 50%;"> <input type="file" name="revenue_file" /> </div>
+		</div>
+	</div>
+    <br />
+    
+    <div style="width: 80%;">
+		<div style="display: flex; justify-content: center;">
+			<div style="width: 30%;" align="center"> <input type="submit" class="fa" name="submit" value="SUBMIT&nbsp; &#xf18e;" style="font-size: 1rem; width: 100%; background-color: orange; border: 1px solid grey; padding: 0.2rem 0; "/> </div>
+           
+		</div>
+	</div>
+</div>
+</div>
+</form>
+
+</body>
+</html>
